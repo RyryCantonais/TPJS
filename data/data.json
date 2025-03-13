@@ -1,427 +1,468 @@
 {
     "armor": [
-      {
-        "id": "leather_helmet",
-        "name": "Leather Helmet",
-        "defense": 1,
-        "craft_items": [
-          {
-            "item": "leather",
-            "quantity": 5
-          }
-        ]
-      },
-      {
-        "id": "leather_chestplate",
-        "name": "Leather Chestplate",
-        "defense": 3,
-        "craft_items": [
-          {
-            "item": "leather",
-            "quantity": 8
-          }
-        ]
-      },
-      {
-        "id": "leather_leggings",
-        "name": "Leather Leggings",
-        "defense": 2,
-        "craft_items": [
-          {
-            "item": "leather",
-            "quantity": 7
-          }
-        ]
-      },
-      {
-        "id": "leather_boots",
-        "name": "Leather Boots",
-        "defense": 1,
-        "craft_items": [
-          {
-            "item": "leather",
-            "quantity": 4
-          }
-        ]
-      },
-      {
-        "id": "chainmail_helmet",
-        "name": "Chainmail Helmet",
-        "defense": 2,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 5
-          }
-        ]
-      },
-      {
-        "id": "chainmail_chestplate",
-        "name": "Chainmail Chestplate",
-        "defense": 5,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 8
-          }
-        ]
-      },
-      {
-        "id": "chainmail_leggings",
-        "name": "Chainmail Leggings",
-        "defense": 4,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 7
-          }
-        ]
-      },
-      {
-        "id": "chainmail_boots",
-        "name": "Chainmail Boots",
-        "defense": 1,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 4
-          }
-        ]
-      },
-      {
-        "id": "iron_helmet",
-        "name": "Iron Helmet",
-        "defense": 2,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 5
-          }
-        ]
-      },
-      {
-        "id": "iron_chestplate",
-        "name": "Iron Chestplate",
-        "defense": 6,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 8
-          }
-        ]
-      },
-      {
-        "id": "iron_leggings",
-        "name": "Iron Leggings",
-        "defense": 5,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 7
-          }
-        ]
-      },
-      {
-        "id": "iron_boots",
-        "name": "Iron Boots",
-        "defense": 2,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 4
-          }
-        ]
-      },
-      {
-        "id": "diamond_helmet",
-        "name": "Diamond Helmet",
-        "defense": 3,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 5
-          }
-        ]
-      },
-      {
-        "id": "diamond_chestplate",
-        "name": "Diamond Chestplate",
-        "defense": 8,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 8
-          }
-        ]
-      },
-      {
-        "id": "diamond_leggings",
-        "name": "Diamond Leggings",
-        "defense": 6,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 7
-          }
-        ]
-      },
-      {
-        "id": "diamond_boots",
-        "name": "Diamond Boots",
-        "defense": 3,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 4
-          }
-        ]
-      },
-      {
-        "id": "netherite_helmet",
-        "name": "Netherite Helmet",
-        "defense": 3,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_helmet",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "netherite_chestplate",
-        "name": "Netherite Chestplate",
-        "defense": 8,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_chestplate",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "netherite_leggings",
-        "name": "Netherite Leggings",
-        "defense": 6,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_leggings",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "netherite_boots",
-        "name": "Netherite Boots",
-        "defense": 3,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_boots",
-            "quantity": 1
-          }
-        ]
-      }
+        {
+            "id": "leather_helmet",
+            "name": "Leather Helmet",
+            "defense": 1,
+            "craft_items": [
+                {
+                    "item": "leather",
+                    "quantity": 5
+                }
+            ]
+        },
+        {
+            "id": "leather_chestplate",
+            "name": "Leather Chestplate",
+            "defense": 3,
+            "craft_items": [
+                {
+                    "item": "leather",
+                    "quantity": 8
+                }
+            ]
+        },
+        {
+            "id": "leather_leggings",
+            "name": "Leather Leggings",
+            "defense": 2,
+            "craft_items": [
+                {
+                    "item": "leather",
+                    "quantity": 7
+                }
+            ]
+        },
+        {
+            "id": "leather_boots",
+            "name": "Leather Boots",
+            "defense": 1,
+            "craft_items": [
+                {
+                    "item": "leather",
+                    "quantity": 4
+                }
+            ]
+        },
+        {
+            "id": "chainmail_helmet",
+            "name": "Chainmail Helmet",
+            "defense": 2,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 5
+                }
+            ]
+        },
+        {
+            "id": "chainmail_chestplate",
+            "name": "Chainmail Chestplate",
+            "defense": 5,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 8
+                }
+            ]
+        },
+        {
+            "id": "chainmail_leggings",
+            "name": "Chainmail Leggings",
+            "defense": 4,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 7
+                }
+            ]
+        },
+        {
+            "id": "chainmail_boots",
+            "name": "Chainmail Boots",
+            "defense": 1,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 4
+                }
+            ]
+        },
+        {
+            "id": "iron_helmet",
+            "name": "Iron Helmet",
+            "defense": 2,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 5
+                }
+            ]
+        },
+        {
+            "id": "iron_chestplate",
+            "name": "Iron Chestplate",
+            "defense": 6,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 8
+                }
+            ]
+        },
+        {
+            "id": "iron_leggings",
+            "name": "Iron Leggings",
+            "defense": 5,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 7
+                }
+            ]
+        },
+        {
+            "id": "iron_boots",
+            "name": "Iron Boots",
+            "defense": 2,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 4
+                }
+            ]
+        },
+        {
+            "id": "diamond_helmet",
+            "name": "Diamond Helmet",
+            "defense": 3,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 5
+                }
+            ]
+        },
+        {
+            "id": "diamond_chestplate",
+            "name": "Diamond Chestplate",
+            "defense": 8,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 8
+                }
+            ]
+        },
+        {
+            "id": "diamond_leggings",
+            "name": "Diamond Leggings",
+            "defense": 6,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 7
+                }
+            ]
+        },
+        {
+            "id": "diamond_boots",
+            "name": "Diamond Boots",
+            "defense": 3,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 4
+                }
+            ]
+        },
+        {
+            "id": "netherite_helmet",
+            "name": "Netherite Helmet",
+            "defense": 3,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_helmet",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "netherite_chestplate",
+            "name": "Netherite Chestplate",
+            "defense": 8,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_chestplate",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "netherite_leggings",
+            "name": "Netherite Leggings",
+            "defense": 6,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_leggings",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "netherite_boots",
+            "name": "Netherite Boots",
+            "defense": 3,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_boots",
+                    "quantity": 1
+                }
+            ]
+        }
     ],
     "weapons": [
-      {
-        "id": "wooden_sword",
-        "name": "Wooden Sword",
-        "attack": 4,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 2
-          },
-          {
-            "item": "stick",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "stone_sword",
-        "name": "Stone Sword",
-        "attack": 5,
-        "craft_items": [
-          {
-            "item": "cobblestone",
-            "quantity": 2
-          },
-          {
-            "item": "stick",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "iron_sword",
-        "name": "Iron Sword",
-        "attack": 6,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 2
-          },
-          {
-            "item": "stick",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "diamond_sword",
-        "name": "Diamond Sword",
-        "attack": 7,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 2
-          },
-          {
-            "item": "stick",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "netherite_sword",
-        "name": "Netherite Sword",
-        "attack": 8,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_sword",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "wooden_axe",
-        "name": "Wooden Axe",
-        "attack": 3,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 3
-          },
-          {
-            "item": "stick",
-            "quantity": 2
-          }
-        ]
-      },
-      {
-        "id": "stone_axe",
-        "name": "Stone Axe",
-        "attack": 4,
-        "craft_items": [
-          {
-            "item": "cobblestone",
-            "quantity": 3
-          },
-          {
-            "item": "stick",
-            "quantity": 2
-          }
-        ]
-      },
-      {
-        "id": "iron_axe",
-        "name": "Iron Axe",
-        "attack": 5,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 3
-          },
-          {
-            "item": "stick",
-            "quantity": 2
-          }
-        ]
-      },
-      {
-        "id": "diamond_axe",
-        "name": "Diamond Axe",
-        "attack": 5,
-        "craft_items": [
-          {
-            "item": "diamond",
-            "quantity": 3
-          },
-          {
-            "item": "stick",
-            "quantity": 2
-          }
-        ]
-      },
-      {
-        "id": "netherite_axe",
-        "name": "Netherite Axe",
-        "attack": 6,
-        "craft_items": [
-          {
-            "item": "netherite_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "diamond_axe",
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "id": "bow",
-        "name": "Bow",
-        "attack": 9,
-        "craft_items": [
-          {
-            "item": "stick",
-            "quantity": 3
-          },
-          {
-            "item": "string",
-            "quantity": 3
-          }
-        ]
-      },
-      {
-        "id": "crossbow",
-        "name": "Crossbow",
-        "attack": 9,
-        "craft_items": [
-          {
-            "item": "iron_ingot",
-            "quantity": 1
-          },
-          {
-            "item": "stick",
-            "quantity": 3
-          },
-          {
-            "item": "string",
-            "quantity": 2
-          }
-        ]
-      }
-    ]
-  }
-  
+        {
+            "id": "wooden_sword",
+            "name": "Wooden Sword",
+            "attack": 4,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 2
+                },
+                {
+                    "item": "stick",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "stone_sword",
+            "name": "Stone Sword",
+            "attack": 5,
+            "craft_items": [
+                {
+                    "item": "cobblestone",
+                    "quantity": 2
+                },
+                {
+                    "item": "stick",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "iron_sword",
+            "name": "Iron Sword",
+            "attack": 6,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 2
+                },
+                {
+                    "item": "stick",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "diamond_sword",
+            "name": "Diamond Sword",
+            "attack": 7,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 2
+                },
+                {
+                    "item": "stick",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "netherite_sword",
+            "name": "Netherite Sword",
+            "attack": 8,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_sword",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "wooden_axe",
+            "name": "Wooden Axe",
+            "attack": 3,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 3
+                },
+                {
+                    "item": "stick",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "id": "stone_axe",
+            "name": "Stone Axe",
+            "attack": 4,
+            "craft_items": [
+                {
+                    "item": "cobblestone",
+                    "quantity": 3
+                },
+                {
+                    "item": "stick",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "id": "iron_axe",
+            "name": "Iron Axe",
+            "attack": 5,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 3
+                },
+                {
+                    "item": "stick",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "id": "diamond_axe",
+            "name": "Diamond Axe",
+            "attack": 5,
+            "craft_items": [
+                {
+                    "item": "diamond",
+                    "quantity": 3
+                },
+                {
+                    "item": "stick",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "id": "netherite_axe",
+            "name": "Netherite Axe",
+            "attack": 6,
+            "craft_items": [
+                {
+                    "item": "netherite_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "diamond_axe",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": "bow",
+            "name": "Bow",
+            "attack": 9,
+            "craft_items": [
+                {
+                    "item": "stick",
+                    "quantity": 3
+                },
+                {
+                    "item": "string",
+                    "quantity": 3
+                }
+            ]
+        },
+        {
+            "id": "crossbow",
+            "name": "Crossbow",
+            "attack": 9,
+            "craft_items": [
+                {
+                    "item": "iron_ingot",
+                    "quantity": 1
+                },
+                {
+                    "item": "stick",
+                    "quantity": 3
+                },
+                {
+                    "item": "string",
+                    "quantity": 2
+                }
+            ]
+        }
+    ],
+    "inventaire": {
+        "leather_helmet": 0,
+        "leather_chestplate": 0,
+        "leather_leggings": 0,
+        "leather_boots": 0,
+        "chainmail_helmet": 0,
+        "chainmail_chestplate": 0,
+        "chainmail_leggings": 0,
+        "chainmail_boots": 0,
+        "iron_helmet": 0,
+        "iron_chestplate": 0,
+        "iron_leggings": 0,
+        "iron_boots": 0,
+        "diamond_helmet": 0,
+        "diamond_chestplate": 0,
+        "diamond_leggings": 0,
+        "diamond_boots": 0,
+        "netherite_helmet": 0,
+        "netherite_chestplate": 0,
+        "netherite_leggings": 0,
+        "netherite_boots": 0,
+        "wooden_sword": 0,
+        "stone_sword": 0,
+        "iron_sword": 0,
+        "diamond_sword": 0,
+        "netherite_sword": 0,
+        "wooden_axe": 0,
+        "stone_axe": 0,
+        "iron_axe": 0,
+        "diamond_axe": 0,
+        "netherite_axe": 0,
+        "bow": 0,
+        "crossbow": 0,
+        "leather": 0,
+        "iron_ingot": 0,
+        "cobblestone": 0,
+        "diamond": 0,
+        "netherite_ingot": 0,
+        "stick": 0,
+        "string": 0,
+        "tripwire_hook": 0
+    }
+}
