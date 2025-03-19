@@ -1,5 +1,69 @@
 {
     "minecraft": {
+
+    "mobs": [
+        {
+            "id": "zombie",
+            "name": "Zombie",
+            "description": "Un monstre hostile qui peut porter une armure et utiliser des armes.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/zombie/zombie.png"
+        },
+        {
+            "id": "zombie_villager",
+            "name": "Zombie Villager",
+            "description": "Une variante du zombie issue de la transformation d'un villageois.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/zombie_villager/zombie_villager.png"
+        },
+        {
+            "id": "drowned",
+            "name": "Drowned",
+            "description": "Un zombie aquatique qui peut apparaître avec une armure et un trident.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/drowned/drowned.png"
+        },
+        {
+            "id": "skeleton",
+            "name": "Skeleton",
+            "description": "Un squelette armé d'un arc, pouvant aussi porter une armure.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/skeleton/skeleton.png"
+        },
+        {
+            "id": "stray",
+            "name": "Stray",
+            "description": "Une variante du squelette trouvée dans les biomes enneigés.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/stray/stray.png"
+        },
+        {
+            "id": "wither_skeleton",
+            "name": "Wither Skeleton",
+            "description": "Un squelette du Nether, plus grand et plus puissant que les squelettes normaux.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/wither_skeleton/wither_skeleton.png"
+        },
+        {
+            "id": "piglin",
+            "name": "Piglin",
+            "description": "Une créature du Nether qui peut porter une armure dorée et attaquer les joueurs sans or.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/piglin/piglin.png"
+        },
+        {
+            "id": "piglin_brute",
+            "name": "Piglin Brute",
+            "description": "Une variante plus puissante du Piglin qui attaque immédiatement les joueurs.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/piglin_brute/piglin_brute.png"
+        },
+        {
+            "id": "zombified_piglin",
+            "name": "Zombified Piglin",
+            "description": "Une version zombie des Piglins qui peut aussi tenir des armes et armures.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/zombified_piglin/zombified_piglin.png"
+        },
+        {
+            "id": "player",
+            "name": "Player",
+            "description": "Le joueur lui-même, pouvant équiper n'importe quelle armure.",
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/steve.png"
+        }
+    ],
+
     "armor": [
         {
             "id": "leather_helmet",
