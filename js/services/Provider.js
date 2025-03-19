@@ -1,4 +1,4 @@
-import { ENDPOINT } from "../config";
+import { ENDPOINT } from "../config.js";
 
 export default class Provider{
     static getInventory = async (limit=10) => {
@@ -27,6 +27,22 @@ export default class Provider{
         };
         try {
             const response = await fetch(`${ENDPOINT}/${id}`, options); 
+            const json = await response.json();
+            return json;
+        } catch (err) {
+            console.error('Error getting documents:', err);
+        }
+    }
+
+    static getAllMobs = async () => {
+        const options = {
+            method: 'GET',
+            header: {
+                'Content-Type': 'application/json'
+            }
+        };
+        try {
+            const response = await fetch(`${ENDPOINT}/mobs`, options);
             const json = await response.json();
             return json;
         } catch (err) {

@@ -1,12 +1,11 @@
 import Inventory from "./views/pages/Inventory.js";
-import Clicker from "./views/pages/Clicker.js";
+import AllMobs from "./views/pages/AllMobs.js";
 
 import Utils from "./services/Utils.js";
 
 const routes = {
-    "/": Inventory,
+    "/": AllMobs,
     "/inventory": Inventory,
-    "/clicker": Clicker
 };
 
 const router = async () => {
