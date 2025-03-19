@@ -1,4 +1,5 @@
 {
+    "minecraft": {
     "armor": [
         {
             "id": "leather_helmet",
@@ -465,4 +466,5 @@
         "string": 0,
         "tripwire_hook": 0
     }
+}
 }
