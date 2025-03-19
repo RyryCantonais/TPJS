@@ -1,7 +1,7 @@
 import { ENDPOINT } from "../config";
 
 export default class Provider{
-    static fetchInventory = async (limit=10) => {
+    static getInventory = async (limit=10) => {
         const options = {
             method: "GET",
             header: {
