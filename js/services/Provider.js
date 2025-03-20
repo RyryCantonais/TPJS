@@ -15,7 +15,7 @@ export default class Provider{
         }
         catch (error) {
             console.error(`Error: ${error}`);
-        }
+        }   
     }
 
     static getItem = async (id) => {
