@@ -49,4 +49,20 @@ export default class Provider{
             console.error('Error getting documents:', err);
         }
     }
+
+    static getMob = async (id) => {
+        const options = {
+            method: 'GET',
+            header: {
+                'Content-Type': 'application/json'
+            }
+        };
+        try {
+            const response = await fetch(`${ENDPOINT}/mobs/${id}`, options);
+            const json = await response.json();
+            return json;
+        } catch (err) {
+            console.error('Error getting documents:', err);
+        }
+    }
 }
