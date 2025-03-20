@@ -1,5 +1,5 @@
 {
-    "minecraft": {
+
 
     "mobs": [
         {
@@ -530,5 +530,4 @@
         "string": 0,
         "tripwire_hook": 0
     }
-}
 }
