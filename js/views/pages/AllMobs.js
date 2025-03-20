@@ -7,7 +7,11 @@ export default class AllMobs{
         return `
             <h1>All Mobs</h1>
             <ul>
-                ${mobs.map(mob => `<li>${mob.name}</li>`).join('')}
+                ${mobs.map(mob => `
+                    <li>
+                        <a href="#/mobs/${mob.id}">${mob.name}</a>
+                    </li>
+                `).join('')}    
             </ul>
         `;
     }
