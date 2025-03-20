@@ -18,7 +18,7 @@
             "id": "drowned",
             "name": "Drowned",
             "description": "Un zombie aquatique qui peut apparaître avec une armure et un trident.",
-            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/drowned/drowned.png"
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/zombie/drowned.png"
         },
         {
             "id": "skeleton",
@@ -30,13 +30,13 @@
             "id": "stray",
             "name": "Stray",
             "description": "Une variante du squelette trouvée dans les biomes enneigés.",
-            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/stray/stray.png"
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/skeleton/stray.png"
         },
         {
             "id": "wither_skeleton",
             "name": "Wither Skeleton",
             "description": "Un squelette du Nether, plus grand et plus puissant que les squelettes normaux.",
-            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/wither_skeleton/wither_skeleton.png"
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/skeleton/wither_skeleton.png"
         },
         {
             "id": "piglin",
@@ -48,13 +48,13 @@
             "id": "piglin_brute",
             "name": "Piglin Brute",
             "description": "Une variante plus puissante du Piglin qui attaque immédiatement les joueurs.",
-            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/piglin_brute/piglin_brute.png"
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/piglin/piglin_brute.png"
         },
         {
             "id": "zombified_piglin",
             "name": "Zombified Piglin",
             "description": "Une version zombie des Piglins qui peut aussi tenir des armes et armures.",
-            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/zombified_piglin/zombified_piglin.png"
+            "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/entity/piglin/zombified_piglin.png"
         },
         {
             "id": "player",
