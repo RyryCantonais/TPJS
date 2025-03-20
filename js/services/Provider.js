@@ -116,7 +116,6 @@ export default class Provider{
             console.error('Error getting documents:', err);
         }
     }
-<<<<<<< HEAD
 
     static getInventory = async () => {
         const options = {
@@ -134,6 +133,4 @@ export default class Provider{
             console.error(`Error: ${error}`);
         }   
     }
-=======
->>>>>>> 8dac8106f6b92a0a2dc7c7ebe00f54ef39a62385
 }
