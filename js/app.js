@@ -1,4 +1,3 @@
-import Inventory from "./views/pages/Inventory.js";
 import AllMobs from "./views/pages/AllMobs.js";
 import DetailsMobs from "./views/pages/DetailsMobs.js";
 
@@ -7,7 +6,6 @@ import Utils from "./services/Utils.js";
 const routes = {
     "/": AllMobs,
     "/mobs": AllMobs,
-    "/inventory": Inventory,
     "/mobs/:id": DetailsMobs
 };
 

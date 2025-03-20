@@ -7,7 +7,7 @@ export default class DetailsMobs{
         return `
             <h1>${mobs.name}</h1>
             <p>${mobs.description}</p>
-            <img src="${mobs.image}" alt="${mobs.name}">
+            <img src="${mobs.image_url}" alt="${mobs.name}" style="max-width: 100%; height: auto;">
         `;
     }
 }
