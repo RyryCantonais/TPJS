@@ -92,263 +92,283 @@
         }
     ],
     "armors": [
-        {
-            "id": "leather_helmet",
-            "name": "Leather Helmet",
-            "defense": 1,
-            "description": "Un casque en cuir offrant une protection légère.",
-            "craft_items": [
-                {
-                    "item": "leather",
-                    "quantity": 5
-                }
-            ]
-        },
-        {
-            "id": "leather_chestplate",
-            "name": "Leather Chestplate",
-            "defense": 3,
-            "description": "Une armure de poitrine en cuir offrant une protection légère.",
-            "craft_items": [
-                {
-                    "item": "leather",
-                    "quantity": 8
-                }
-            ]
-        },
-        {
-            "id": "leather_leggings",
-            "name": "Leather Leggings",
-            "defense": 2,
-            "description": "Des jambières en cuir offrant une protection légère.",
-            "craft_items": [
-                {
-                    "item": "leather",
-                    "quantity": 7
-                }
-            ]
-        },
-        {
-            "id": "leather_boots",
-            "name": "Leather Boots",
-            "defense": 1,
-            "description": "Des bottes en cuir offrant une protection légère.",
-            "craft_items": [
-                {
-                    "item": "leather",
-                    "quantity": 4
-                }
-            ]
-        },
-        {
-            "id": "chainmail_helmet",
-            "name": "Chainmail Helmet",
-            "defense": 2,
-            "description": "Un casque en mailles offrant une protection modérée.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 5
-                }
-            ]
-        },
-        {
-            "id": "chainmail_chestplate",
-            "name": "Chainmail Chestplate",
-            "defense": 5,
-            "description": "Une armure de poitrine en mailles offrant une protection modérée.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 8
-                }
-            ]
-        },
-        {
-            "id": "chainmail_leggings",
-            "name": "Chainmail Leggings",
-            "defense": 4,
-            "description": "Des jambières en mailles offrant une protection modérée.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 7
-                }
-            ]
-        },
-        {
-            "id": "chainmail_boots",
-            "name": "Chainmail Boots",
-            "defense": 1,
-            "description": "Des bottes en mailles offrant une protection modérée.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 4
-                }
-            ]
-        },
-        {
-            "id": "iron_helmet",
-            "name": "Iron Helmet",
-            "defense": 2,
-            "description": "Un casque en fer offrant une bonne protection.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 5
-                }
-            ]
-        },
-        {
-            "id": "iron_chestplate",
-            "name": "Iron Chestplate",
-            "defense": 6,
-            "description": "Une armure de poitrine en fer offrant une bonne protection.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 8
-                }
-            ]
-        },
-        {
-            "id": "iron_leggings",
-            "name": "Iron Leggings",
-            "defense": 5,
-            "description": "Des jambières en fer offrant une bonne protection.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 7
-                }
-            ]
-        },
-        {
-            "id": "iron_boots",
-            "name": "Iron Boots",
-            "defense": 2,
-            "description": "Des bottes en fer offrant une bonne protection.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 4
-                }
-            ]
-        },
-        {
-            "id": "diamond_helmet",
-            "name": "Diamond Helmet",
-            "defense": 3,
-            "description": "Un casque en diamant offrant une excellente protection.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 5
-                }
-            ]
-        },
-        {
-            "id": "diamond_chestplate",
-            "name": "Diamond Chestplate",
-            "defense": 8,
-            "description": "Une armure de poitrine en diamant offrant une excellente protection.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 8
-                }
-            ]
-        },
-        {
-            "id": "diamond_leggings",
-            "name": "Diamond Leggings",
-            "defense": 6,
-            "description": "Des jambières en diamant offrant une excellente protection.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 7
-                }
-            ]
-        },
-        {
-            "id": "diamond_boots",
-            "name": "Diamond Boots",
-            "defense": 3,
-            "description": "Des bottes en diamant offrant une excellente protection.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 4
-                }
-            ]
-        },
-        {
-            "id": "netherite_helmet",
-            "name": "Netherite Helmet",
-            "defense": 3,
-            "description": "Un casque en netherite offrant la meilleure protection possible.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_helmet",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "netherite_chestplate",
-            "name": "Netherite Chestplate",
-            "defense": 8,
-            "description": "Une armure de poitrine en netherite offrant la meilleure protection possible.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_chestplate",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "netherite_leggings",
-            "name": "Netherite Leggings",
-            "defense": 6,
-            "description": "Des jambières en netherite offrant la meilleure protection possible.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_leggings",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "netherite_boots",
-            "name": "Netherite Boots",
-            "defense": 3,
-            "description": "Des bottes en netherite offrant la meilleure protection possible.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_boots",
-                    "quantity": 1
-                }
-            ]
-        }
-    ],
+    {
+        "id": "leather_helmet",
+        "name": "Leather Helmet",
+        "defense": 1,
+        "description": "Un casque en cuir offrant une protection légère.",
+        "craft_items": [
+            {
+                "item": "leather",
+                "quantity": 5
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/leather_helmet.png"
+    },
+    {
+        "id": "leather_chestplate",
+        "name": "Leather Chestplate",
+        "defense": 3,
+        "description": "Une armure de poitrine en cuir offrant une protection légère.",
+        "craft_items": [
+            {
+                "item": "leather",
+                "quantity": 8
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/leather_chestplate.png"
+    },
+    {
+        "id": "leather_leggings",
+        "name": "Leather Leggings",
+        "defense": 2,
+        "description": "Des jambières en cuir offrant une protection légère.",
+        "craft_items": [
+            {
+                "item": "leather",
+                "quantity": 7
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/leather_leggings.png"
+    },
+    {
+        "id": "leather_boots",
+        "name": "Leather Boots",
+        "defense": 1,
+        "description": "Des bottes en cuir offrant une protection légère.",
+        "craft_items": [
+            {
+                "item": "leather",
+                "quantity": 4
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/leather_boots.png"
+    },
+    {
+        "id": "chainmail_helmet",
+        "name": "Chainmail Helmet",
+        "defense": 2,
+        "description": "Un casque en mailles offrant une protection modérée.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 5
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/chainmail_helmet.png"
+    },
+    {
+        "id": "chainmail_chestplate",
+        "name": "Chainmail Chestplate",
+        "defense": 5,
+        "description": "Une armure de poitrine en mailles offrant une protection modérée.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 8
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/chainmail_chestplate.png"
+    },
+    {
+        "id": "chainmail_leggings",
+        "name": "Chainmail Leggings",
+        "defense": 4,
+        "description": "Des jambières en mailles offrant une protection modérée.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 7
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/chainmail_leggings.png"
+    },
+    {
+        "id": "chainmail_boots",
+        "name": "Chainmail Boots",
+        "defense": 1,
+        "description": "Des bottes en mailles offrant une protection modérée.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 4
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/chainmail_boots.png"
+    },
+    {
+        "id": "iron_helmet",
+        "name": "Iron Helmet",
+        "defense": 2,
+        "description": "Un casque en fer offrant une bonne protection.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 5
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_helmet.png"
+    },
+    {
+        "id": "iron_chestplate",
+        "name": "Iron Chestplate",
+        "defense": 6,
+        "description": "Une armure de poitrine en fer offrant une bonne protection.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 8
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_chestplate.png"
+    },
+    {
+        "id": "iron_leggings",
+        "name": "Iron Leggings",
+        "defense": 5,
+        "description": "Des jambières en fer offrant une bonne protection.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 7
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_leggings.png"
+    },
+    {
+        "id": "iron_boots",
+        "name": "Iron Boots",
+        "defense": 2,
+        "description": "Des bottes en fer offrant une bonne protection.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 4
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_boots.png"
+    },
+    {
+        "id": "diamond_helmet",
+        "name": "Diamond Helmet",
+        "defense": 3,
+        "description": "Un casque en diamant offrant une excellente protection.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 5
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_helmet.png"
+    },
+    {
+        "id": "diamond_chestplate",
+        "name": "Diamond Chestplate",
+        "defense": 8,
+        "description": "Une armure de poitrine en diamant offrant une excellente protection.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 8
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_chestplate.png"
+    },
+    {
+        "id": "diamond_leggings",
+        "name": "Diamond Leggings",
+        "defense": 6,
+        "description": "Des jambières en diamant offrant une excellente protection.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 7
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_leggings.png"
+    },
+    {
+        "id": "diamond_boots",
+        "name": "Diamond Boots",
+        "defense": 3,
+        "description": "Des bottes en diamant offrant une excellente protection.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 4
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_boots.png"
+    },
+    {
+        "id": "netherite_helmet",
+        "name": "Netherite Helmet",
+        "defense": 3,
+        "description": "Un casque en netherite offrant la meilleure protection possible.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_helmet",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_helmet.png"
+    },
+    {
+        "id": "netherite_chestplate",
+        "name": "Netherite Chestplate",
+        "defense": 8,
+        "description": "Une armure de poitrine en netherite offrant la meilleure protection possible.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_chestplate",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_chestplate.png"
+    },
+    {
+        "id": "netherite_leggings",
+        "name": "Netherite Leggings",
+        "defense": 6,
+        "description": "Des jambières en netherite offrant la meilleure protection possible.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_leggings",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_leggings.png"
+    },
+    {
+        "id": "netherite_boots",
+        "name": "Netherite Boots",
+        "defense": 3,
+        "description": "Des bottes en netherite offrant la meilleure protection possible.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_boots",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_boots.png"
+    }
+],
     "weapons": [
         {
             "id": "wooden_sword",
