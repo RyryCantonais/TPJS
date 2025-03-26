@@ -91,7 +91,7 @@
             "defense": 0
         }
     ],
-    "armor": [
+    "armors": [
         {
             "id": "leather_helmet",
             "name": "Leather Helmet",

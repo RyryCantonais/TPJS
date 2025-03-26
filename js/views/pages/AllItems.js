@@ -2,8 +2,8 @@ import Provider from "../../services/Provider.js";
 
 export default class AllItems{
     static async render(){
-        const armors = await Provider.getArmors();
-        const weapons = await Provider.getWeapons();
+        const armors = await Provider.getAllArmors();
+        const weapons = await Provider.getAllWeapons();
         console.log(armors);
         console.log(weapons);
         return `
@@ -12,7 +12,7 @@ export default class AllItems{
             <ul>
                 ${armors.map(armors => `
                     <li>
-                        <a href="#/mobs/${armors.id}">${armors.name}</a>
+                        <a href="#/armor/${armors.id}">${armors.name}</a>
                     </li>
                 `).join('')}    
             </ul>
@@ -20,7 +20,7 @@ export default class AllItems{
             <ul>
                 ${weapons.map(weapons => `
                     <li>
-                        <a href="#/mobs/${weapons.id}">${weapons.name}</a>
+                        <a href="#/weapon/${weapons.id}">${weapons.name}</a>
                     </li>
                 `).join('')}    
             </ul>

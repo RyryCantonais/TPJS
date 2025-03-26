@@ -1,6 +1,8 @@
 import AllMobs from "./views/pages/AllMobs.js";
 import DetailsMobs from "./views/pages/DetailsMobs.js";
 import AllItems from "./views/pages/AllItems.js";
+import DetailArmor from "./views/pages/DetailsArmor.js";
+import DetailWeapon from "./views/pages/DetailWeapon.js";
 
 import Utils from "./services/Utils.js";
 
@@ -9,6 +11,9 @@ const routes = {
     "/mobs": AllMobs,
     "/mobs/:id": DetailsMobs,
     "/items": AllItems,
+    "/weapon/:id": DetailWeapon,
+    "/armor/:id": DetailArmor
+
 };
 
 const router = async () => {

@@ -74,7 +74,7 @@ export default class Provider{
             }
         };
         try {
-            const response = await fetch(`${ENDPOINT}/armor/${id}`, options);
+            const response = await fetch(`${ENDPOINT}/armors/${id}`, options);
             const json = await response.json();
             return json;
         } catch (err) {
@@ -90,7 +90,7 @@ export default class Provider{
             }
         };
         try {
-            const response = await fetch(`${ENDPOINT}/weapon`, options);
+            const response = await fetch(`${ENDPOINT}/weapons`, options);
             const json = await response.json();
             return json;
         } catch (err) {
@@ -106,7 +106,7 @@ export default class Provider{
             }
         };
         try {
-            const response = await fetch(`${ENDPOINT}/weapon/${id}`, options);
+            const response = await fetch(`${ENDPOINT}/weapons/${id}`, options);
             const json = await response.json();
             return json;
         } catch (err) {
