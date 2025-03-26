@@ -5,6 +5,7 @@ export default class DetailWeapon{
         const weapons = await Provider.getWeapon(id);
         console.log(weapons);
         return `
+            <link rel="stylesheet" href="../../css/detailweapons.css">
             <h2>${weapons.name}</h2>
             <p>${weapons.description}</p>
             <img src="${weapons.image_url}" alt="${weapons.name}" style="max-width: 100%; height: auto;">
