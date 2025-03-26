@@ -23,9 +23,23 @@ export default class DetailsMobs {
         tableContent += "</tr>";
 
         return `
+            <div class="mob">
             <h2>${mobs.name}</h2>
             <p>${mobs.description}</p>
             <img src="${mobs.image_url}" alt="${mobs.name}" style="max-width: 100%; height: auto;">
+            <table>
+                <tr>
+                    <th>Health</th>
+                    <th>Damage</th>
+                    <th>Defense</th>
+                </tr>
+                <tr>
+                    <td>${mobs.health}</td>
+                    <td>${mobs.damage}</td>
+                    <td>${mobs.defense}</td>
+                </tr>
+            </table>
+            </div>
             <h2>Selectionner votre équipement</h2>
             <table border="1">
                 ${tableContent}

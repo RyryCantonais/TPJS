@@ -10,16 +10,10 @@ export default class DetailsArmor{
             <img src="${armors.image_url}" alt="${armors.name}" style="max-width: 100%; height: auto;">
             <table>
                 <tr>
-                    <th>Level</th>
                     <th>Defense</th>
-                    <th>Weight</th>
-                    <th>Price</th>
                 </tr>
                 <tr>
-                    <td>${armors.level}</td>
                     <td>${armors.defense}</td>
-                    <td>${armors.weight}</td>
-                    <td>${armors.price}</td>
                 </tr>
             </table>
         `;
