@@ -5,7 +5,7 @@ export default class AllMobs{
         const mobs = await Provider.getAllMobs();
         console.log(mobs);
         return `
-            <h1>All Mobs</h1>
+            <h2>All Mobs</h2>
             <ul>
                 ${mobs.map(mob => `
                     <li>
@@ -13,6 +13,9 @@ export default class AllMobs{
                     </li>
                 `).join('')}    
             </ul>
+
+            <h2>All Items</h2>
+            <a href="#/items">All items</a>
         `;
     }
 }

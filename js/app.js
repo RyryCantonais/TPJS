@@ -1,12 +1,14 @@
 import AllMobs from "./views/pages/AllMobs.js";
 import DetailsMobs from "./views/pages/DetailsMobs.js";
+import AllItems from "./views/pages/AllItems.js";
 
 import Utils from "./services/Utils.js";
 
 const routes = {
     "/": AllMobs,
     "/mobs": AllMobs,
-    "/mobs/:id": DetailsMobs
+    "/mobs/:id": DetailsMobs,
+    "/items": AllItems,
 };
 
 const router = async () => {
