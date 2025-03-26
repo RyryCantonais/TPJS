@@ -10,16 +10,10 @@ export default class DetailWeapon{
             <img src="${weapons.image_url}" alt="${weapons.name}" style="max-width: 100%; height: auto;">
             <table>
                 <tr>
-                    <th>Level</th>
                     <th>Damage</th>
-                    <th>Weight</th>
-                    <th>Price</th>
                 </tr>
                 <tr>
-                    <td>${weapons.level}</td>
-                    <td>${weapons.damage}</td>
-                    <td>${weapons.weight}</td>
-                    <td>${weapons.price}</td>
+                    <td>${weapons.attack}</td>
                 </tr>
             </table>
         `;
