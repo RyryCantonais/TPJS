@@ -5,6 +5,7 @@ export default class AllMobs{
         const mobs = await Provider.getAllMobs();
         console.log(mobs);
         return `
+            <link rel="stylesheet" href="../../css/allmobs.css">
             <h2>All Mobs</h2>
             <ul>
                 ${mobs.map(mob => `

@@ -7,6 +7,7 @@ export default class AllItems{
         console.log(armors);
         console.log(weapons);
         return `
+            <link rel="stylesheet" href="../../css/allitems.css">
             <h2>Tout les items</h2>
             <h3>Armures</h3>
             <ul>
