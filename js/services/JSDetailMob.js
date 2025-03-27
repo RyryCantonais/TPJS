@@ -1,7 +1,10 @@
 export default class JSDetailMob {
-    constructor() {
-        document.addEventListener("DOMContentLoaded", () => this.init());
-    }
+    static clic(equip){console.log(equip)}
+
+
+    // constructor() {
+    //     document.addEventListener("DOMContentLoaded", () => this.init());
+    // }
 
     init() {
         this.equipementList = document.getElementById("equipement-list");
