@@ -380,203 +380,215 @@
     }
 ],
     "weapons": [
-        {
-            "id": "wooden_sword",
-            "name": "Wooden Sword",
-            "attack": 4,
-            "description": "Une épée en bois, idéale pour les débutants.",
-            "craft_items": [
-                {
-                    "item": "wooden_planks",
-                    "quantity": 2
-                },
-                {
-                    "item": "stick",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "stone_sword",
-            "name": "Stone Sword",
-            "attack": 5,
-            "description": "Une épée en pierre, plus durable que l'épée en bois.",
-            "craft_items": [
-                {
-                    "item": "cobblestone",
-                    "quantity": 2
-                },
-                {
-                    "item": "stick",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "iron_sword",
-            "name": "Iron Sword",
-            "attack": 6,
-            "description": "Une épée en fer, offrant un bon équilibre entre durabilité et puissance.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 2
-                },
-                {
-                    "item": "stick",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "diamond_sword",
-            "name": "Diamond Sword",
-            "attack": 7,
-            "description": "Une épée en diamant, très puissante et durable.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 2
-                },
-                {
-                    "item": "stick",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "netherite_sword",
-            "name": "Netherite Sword",
-            "attack": 8,
-            "description": "Une épée en netherite, la plus puissante et durable de toutes.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_sword",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "wooden_axe",
-            "name": "Wooden Axe",
-            "attack": 3,
-            "description": "Une hache en bois, utile pour couper du bois.",
-            "craft_items": [
-                {
-                    "item": "wooden_planks",
-                    "quantity": 3
-                },
-                {
-                    "item": "stick",
-                    "quantity": 2
-                }
-            ]
-        },
-        {
-            "id": "stone_axe",
-            "name": "Stone Axe",
-            "attack": 4,
-            "description": "Une hache en pierre, plus durable que la hache en bois.",
-            "craft_items": [
-                {
-                    "item": "cobblestone",
-                    "quantity": 3
-                },
-                {
-                    "item": "stick",
-                    "quantity": 2
-                }
-            ]
-        },
-        {
-            "id": "iron_axe",
-            "name": "Iron Axe",
-            "attack": 5,
-            "description": "Une hache en fer, offrant un bon équilibre entre durabilité et puissance.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 3
-                },
-                {
-                    "item": "stick",
-                    "quantity": 2
-                }
-            ]
-        },
-        {
-            "id": "diamond_axe",
-            "name": "Diamond Axe",
-            "attack": 5,
-            "description": "Une hache en diamant, très puissante et durable.",
-            "craft_items": [
-                {
-                    "item": "diamond",
-                    "quantity": 3
-                },
-                {
-                    "item": "stick",
-                    "quantity": 2
-                }
-            ]
-        },
-        {
-            "id": "netherite_axe",
-            "name": "Netherite Axe",
-            "attack": 6,
-            "description": "Une hache en netherite, la plus puissante et durable de toutes.",
-            "craft_items": [
-                {
-                    "item": "netherite_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "diamond_axe",
-                    "quantity": 1
-                }
-            ]
-        },
-        {
-            "id": "bow",
-            "name": "Bow",
-            "attack": 9,
-            "description": "Un arc, idéal pour les attaques à distance.",
-            "craft_items": [
-                {
-                    "item": "stick",
-                    "quantity": 3
-                },
-                {
-                    "item": "string",
-                    "quantity": 3
-                }
-            ]
-        },
-        {
-            "id": "crossbow",
-            "name": "Crossbow",
-            "attack": 9,
-            "description": "Une arbalète, offrant des attaques à distance puissantes.",
-            "craft_items": [
-                {
-                    "item": "iron_ingot",
-                    "quantity": 1
-                },
-                {
-                    "item": "stick",
-                    "quantity": 3
-                },
-                {
-                    "item": "string",
-                    "quantity": 2
-                }
-            ]
-        }
-    ],
+    {
+        "id": "wooden_sword",
+        "name": "Wooden Sword",
+        "attack": 4,
+        "description": "Une épée en bois, idéale pour les débutants.",
+        "craft_items": [
+            {
+                "item": "wooden_planks",
+                "quantity": 2
+            },
+            {
+                "item": "stick",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/wooden_sword.png"
+    },
+    {
+        "id": "stone_sword",
+        "name": "Stone Sword",
+        "attack": 5,
+        "description": "Une épée en pierre, plus durable que l'épée en bois.",
+        "craft_items": [
+            {
+                "item": "cobblestone",
+                "quantity": 2
+            },
+            {
+                "item": "stick",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/stone_sword.png"
+    },
+    {
+        "id": "iron_sword",
+        "name": "Iron Sword",
+        "attack": 6,
+        "description": "Une épée en fer, offrant un bon équilibre entre durabilité et puissance.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 2
+            },
+            {
+                "item": "stick",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_sword.png"
+    },
+    {
+        "id": "diamond_sword",
+        "name": "Diamond Sword",
+        "attack": 7,
+        "description": "Une épée en diamant, très puissante et durable.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 2
+            },
+            {
+                "item": "stick",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_sword.png"
+    },
+    {
+        "id": "netherite_sword",
+        "name": "Netherite Sword",
+        "attack": 8,
+        "description": "Une épée en netherite, la plus puissante et durable de toutes.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_sword",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_sword.png"
+    },
+    {
+        "id": "wooden_axe",
+        "name": "Wooden Axe",
+        "attack": 3,
+        "description": "Une hache en bois, utile pour couper du bois.",
+        "craft_items": [
+            {
+                "item": "wooden_planks",
+                "quantity": 3
+            },
+            {
+                "item": "stick",
+                "quantity": 2
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/wooden_axe.png"
+    },
+    {
+        "id": "stone_axe",
+        "name": "Stone Axe",
+        "attack": 4,
+        "description": "Une hache en pierre, plus durable que la hache en bois.",
+        "craft_items": [
+            {
+                "item": "cobblestone",
+                "quantity": 3
+            },
+            {
+                "item": "stick",
+                "quantity": 2
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/stone_axe.png"
+    },
+    {
+        "id": "iron_axe",
+        "name": "Iron Axe",
+        "attack": 5,
+        "description": "Une hache en fer, offrant un bon équilibre entre durabilité et puissance.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 3
+            },
+            {
+                "item": "stick",
+                "quantity": 2
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/iron_axe.png"
+    },
+    {
+        "id": "diamond_axe",
+        "name": "Diamond Axe",
+        "attack": 5,
+        "description": "Une hache en diamant, très puissante et durable.",
+        "craft_items": [
+            {
+                "item": "diamond",
+                "quantity": 3
+            },
+            {
+                "item": "stick",
+                "quantity": 2
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/diamond_axe.png"
+    },
+    {
+        "id": "netherite_axe",
+        "name": "Netherite Axe",
+        "attack": 6,
+        "description": "Une hache en netherite, la plus puissante et durable de toutes.",
+        "craft_items": [
+            {
+                "item": "netherite_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "diamond_axe",
+                "quantity": 1
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/netherite_axe.png"
+    },
+    {
+        "id": "bow",
+        "name": "Bow",
+        "attack": 9,
+        "description": "Un arc, idéal pour les attaques à distance.",
+        "craft_items": [
+            {
+                "item": "stick",
+                "quantity": 3
+            },
+            {
+                "item": "string",
+                "quantity": 3
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/bow.png"
+    },
+    {
+        "id": "crossbow",
+        "name": "Crossbow",
+        "attack": 9,
+        "description": "Une arbalète, offrant des attaques à distance puissantes.",
+        "craft_items": [
+            {
+                "item": "iron_ingot",
+                "quantity": 1
+            },
+            {
+                "item": "stick",
+                "quantity": 3
+            },
+            {
+                "item": "string",
+                "quantity": 2
+            }
+        ],
+        "image_url": "https://assets.mcasset.cloud/1.21.4/assets/minecraft/textures/item/crossbow_pulling_0.png"
+    }
+],
     "inventory": {
         "leather_helmet": 0,
         "leather_chestplate": 0,
