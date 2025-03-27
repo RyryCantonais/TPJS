@@ -1,7 +1,7 @@
 import Provider from "../../services/Provider.js";
+import JSDetailMob from "../../services/JSDetailMob.js";
 
 export default class DetailsMobs {
-
     static async render(id) {
         const mobs = await Provider.getMob(id);
         const armors = await Provider.getAllArmors();
@@ -12,7 +12,7 @@ export default class DetailsMobs {
         allEquipments.forEach((equip, index) => {
             tableContent += `
                 <td>
-                    <img id="${equip.id}" src="${equip.image_url}" alt="${equip.name}" style="width: 50px; height: 50px;">
+                    <img id="${equip}" src="${equip.image_url}" alt="${equip.name}" style="width: 50px; height: 50px;" data-json='${JSON.stringify(equip)}'>
                     <p>${equip.name}</p>
                 </td>
             `;
@@ -24,11 +24,7 @@ export default class DetailsMobs {
         tableContent += "</tr>";
 
         return `
-        <script type="module" src="../../services/JSDetailMob.js"></script>
-        <script>
-        let mobObjet = new JSDetailMob(mobs); 
-        </script>
-        <link rel="stylesheet" href="../../css/detailsmobs.css">
+            <link rel="stylesheet" href="../../css/detailsmobs.css">
             <div class="mob" id="mob-container">
                 <div class="mob" id="desc-mob">
                     <h2>${mobs.name}</h2>
@@ -65,5 +61,9 @@ export default class DetailsMobs {
                 ${tableContent}
             </table>
         `;
+    }
+
+    static afterRender(id) {
+        new JSDetailMob(id);
     }
 }
