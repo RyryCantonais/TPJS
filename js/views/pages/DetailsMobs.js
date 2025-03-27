@@ -1,49 +1,6 @@
 import Provider from "../../services/Provider.js";
 
 export default class DetailsMobs {
-    helmet = null;
-    chestplate = null;
-    leggings = null;
-    boots = null;
-    weapon = null;
-
-    defense = 0;
-    damage = 0;
-    life = 0;
-
-    static equipItem(equipId) {
-        const [_, category] = equipId.split('_'); 
-        switch (category) {
-            case 'helmet':
-                this.helmet = equipId;
-                break;
-            case 'chestplate':
-                this.chestplate = equipId;
-                break;
-            case 'leggings':
-                this.leggings = equipId;
-                break;
-            case 'boots':
-                this.boots = equipId;
-                break;
-            case 'weapon':
-                this.weapon = equipId;
-                break;
-            default:
-                console.error(`Unknown category: ${category}`);
-        }
-
-        // Mettre à jour l'affichage de l'équipement
-        this.updateEquipmentDisplay();
-    }
-
-    static updateEquipmentDisplay() {
-        document.getElementById('EHelmet').innerText = this.helmet || 'None';
-        document.getElementById('EChestplate').innerText = this.chestplate || 'None';
-        document.getElementById('ELeggings').innerText = this.leggings || 'None';
-        document.getElementById('EBoots').innerText = this.boots || 'None';
-        document.getElementById('EWeapons').innerText = this.weapon || 'None';
-    }
 
     static async render(id) {
         const mobs = await Provider.getMob(id);
@@ -55,7 +12,7 @@ export default class DetailsMobs {
         allEquipments.forEach((equip, index) => {
             tableContent += `
                 <td>
-                    <img id="${equip.id}" src="${equip.image_url}" alt="${equip.name}" style="width: 50px; height: 50px;" onclick="this.equipItem('${equip.id}')">
+                    <img id="${equip.id}" src="${equip.image_url}" alt="${equip.name}" style="width: 50px; height: 50px;">
                     <p>${equip.name}</p>
                 </td>
             `;
@@ -67,6 +24,10 @@ export default class DetailsMobs {
         tableContent += "</tr>";
 
         return `
+        <script type="module" src="../../services/JSDetailMob.js"></script>
+        <script>
+        let mobObjet = new JSDetailMob(mobs); 
+        </script>
         <link rel="stylesheet" href="../../css/detailsmobs.css">
             <div class="mob" id="mob-container">
                 <div class="mob" id="desc-mob">
