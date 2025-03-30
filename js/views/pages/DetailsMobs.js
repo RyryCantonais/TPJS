@@ -14,7 +14,7 @@ export default class DetailsMobs {
         allEquipments.forEach((equip, index) => {
             tableContent += `
                 <td>
-                    <img id="${equip}" src="${equip.image_url}" alt="${equip.name}" onclick="JSDetailMob.clic('${equip.id}')" style="width: 50px; height: 50px;" data-json='${JSON.stringify(equip)}'>
+                    <img id="${equip}" src="${equip.image_url}" alt="${equip.name}" onclick="JSDetailMob.equipItem('${equip.id}')" style="width: 50px; height: 50px;" data-json='${JSON.stringify(equip)}'>
                     <p>${equip.name}</p>
                 </td>
             `;
@@ -36,7 +36,7 @@ export default class DetailsMobs {
                 </div>
                 <div class="mob" id="equipement-mob">
                     <h2>Equipement</h2>
-                    <table>
+                    <table id="itemTable">
                         <tr><td id="EHelmet">None</td></tr>
                         <tr><td id="EChestplate">None</td></tr>
                         <tr><td id="ELeggings">None</td></tr>
@@ -52,9 +52,9 @@ export default class DetailsMobs {
                             <th>Defense</th>
                         </tr>
                         <tr>
-                            <td>${mobs.health}</td>
-                            <td>${mobs.damage}</td>
-                            <td>${mobs.defense}</td>
+                            <td id="lfe-stat">${mobs.health}</td>
+                            <td id="dmg-stat">${mobs.damage}</td>
+                            <td id="def-stat">${mobs.defense}</td>
                         </tr>
                     </table>
                 </div>
@@ -64,9 +64,5 @@ export default class DetailsMobs {
                 ${tableContent}
             </table>
         `;
-    }
-
-    static afterRender(id) {
-        new JSDetailMob(id);
     }
 }

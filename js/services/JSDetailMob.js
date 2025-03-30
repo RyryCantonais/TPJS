@@ -1,74 +1,143 @@
+import Provider from "./Provider.js";
+
 export default class JSDetailMob {
-    static clic(equip){console.log(equip)}
 
+    static async equipItem(id){
+        const parts = id.split('_');
+        if (parts.length === 1) {
+            parts.push(parts[0]);
+        }
+        const [XXX, YYY] = parts;
+        console.log(XXX, YYY);
 
-    // constructor() {
-    //     document.addEventListener("DOMContentLoaded", () => this.init());
-    // }
+        let item = null;
+        let table = document.getElementById("itemTable");
+        let row = null;
+        let cell = null;
 
-    init() {
-        this.equipementList = document.getElementById("equipement-list");
-        this.statsMob = document.getElementById("stats-mob");
+        switch(YYY){
+            case "helmet":
+                row = table.rows[0];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+                this.updateStats("def-stat", item.defense);
+                break;
+            case "chestplate":
+                row = table.rows[1];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+                this.updateStats("def-stat", item.defense);
+                break;
+            case "leggings":
+                row = table.rows[2];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+                this.updateStats("def-stat", item.defense);
+                break;
+            case "boots":
+                row = table.rows[3];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+                this.updateStats("def-stat", item.defense);
+                break;
+            case "sword":
+            case "axe":
+            case "bow":
+            case "crossbow":
+                row = table.rows[4];
+                cell = row.cells[0];
+                item = await Provider.getWeapon(id);
+                console.log(item);
+                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+                this.updateStats("dmg-stat", item.attack);
 
-        this.equipementSlots = {
-            Helmet: document.getElementById("EHelmet"),
-            Chestplate: document.getElementById("EChestplate"),
-            Leggings: document.getElementById("ELeggings"),
-            Boots: document.getElementById("EBoots"),
-            Weapons: document.getElementById("EWeapons")
-        };
-
-        this.stats = {
-            damage: this.statsMob.querySelector("tr:nth-child(2) td:nth-child(2)"),
-            defense: this.statsMob.querySelector("tr:nth-child(2) td:nth-child(3)")
-        };
-
-        this.equippedItems = {};
-
-        this.equipementList.querySelectorAll("img").forEach(img => {
-            img.addEventListener("click", () => this.equipItem(img));
-        });
-
-        Object.values(this.equipementSlots).forEach(slot => {
-            slot.addEventListener("click", () => this.unequipItem(slot));
-        });
-    }
-
-    equipItem(img) {
-        const itemId = img.id;
-        const itemData = JSON.parse(img.getAttribute("data-json"));
-        const [prefix, type] = itemId.includes("_") ? itemId.split("_") : [null, itemId];
-
-        if (type in this.equipementSlots) {
-            if (this.equippedItems[type]) {
-                this.unequipItem(this.equipementSlots[type]);
-            }
-            this.equipementSlots[type].textContent = itemData.name;
-            this.equippedItems[type] = itemData;
-            this.updateStats(itemData, "add");
+                break;
         }
     }
 
-    unequipItem(slot) {
-        const type = Object.keys(this.equipementSlots).find(key => this.equipementSlots[key] === slot);
-        if (this.equippedItems[type]) {
-            this.updateStats(this.equippedItems[type], "remove");
-            slot.textContent = "None";
-            delete this.equippedItems[type];
+
+    
+    static async unequipItem(id){
+        const parts = id.split('_');
+        if (parts.length === 1) {
+            parts.push(parts[0]);
+        }
+        const [XXX, YYY] = parts;
+        console.log(XXX, YYY);
+
+        let item = null;
+        let table = document.getElementById("itemTable");
+        let row = null;
+        let cell = null;
+
+        switch(YYY){
+            case "helmet":
+                row = table.rows[0];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `None`;
+                this.updateStats("def-stat", -item.defense);
+                break;
+            case "chestplate":
+                row = table.rows[1];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `None`;
+                this.updateStats("def-stat", -item.defense);
+                break;
+            case "leggings":
+                row = table.rows[2];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `None`;
+                this.updateStats("def-stat", -item.defense);
+                break;
+            case "boots":
+                row = table.rows[3];
+                cell = row.cells[0];
+                item = await Provider.getArmor(id);
+                console.log(item);
+                cell.innerHTML = `None`;
+                this.updateStats("def-stat", -item.defense);                
+                break;
+            case "sword":
+            case "axe":
+            case "bow":
+            case "crossbow":
+                row = table.rows[4];
+                cell = row.cells[0];
+                item = await Provider.getWeapon(id);
+                console.log(item);
+                cell.innerHTML = `None`;
+                this.updateStats("dmg-stat", -item.attack);
+                break;
         }
     }
 
-    updateStats(item, action) {
-        if (item.damage && action === "add") {
-            this.stats.damage.textContent = parseInt(this.stats.damage.textContent) + item.damage;
-        } else if (item.damage && action === "remove") {
-            this.stats.damage.textContent = parseInt(this.stats.damage.textContent) - item.damage;
-        }
+    static updateStats(stat, value) {
+        const statElement = document.getElementById(stat);
+        const currentStat = parseInt(statElement.innerHTML) || 0;
+        statElement.innerHTML = currentStat + value;
+    }
+    
+    
 
-        if (item.defense && action === "add") {
-            this.stats.defense.textContent = parseInt(this.stats.defense.textContent) + item.defense;
-        } else if (item.defense && action === "remove") {
-            this.stats.defense.textContent = parseInt(this.stats.defense.textContent) - item.defense;
+    static async getInitValue(cat){
+        switch(cat){
+            case "helmet":
+
+
         }
     }
 }
