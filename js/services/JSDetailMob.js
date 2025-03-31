@@ -2,142 +2,126 @@ import Provider from "./Provider.js";
 
 export default class JSDetailMob {
 
-    static async equipItem(id){
+    static async equipItem(id) {
         const parts = id.split('_');
         if (parts.length === 1) {
             parts.push(parts[0]);
         }
         const [XXX, YYY] = parts;
-        console.log(XXX, YYY);
-
+        console.log("Équipement :", XXX, YYY);
+    
         let item = null;
-        let table = document.getElementById("itemTable");
-        let row = null;
-        let cell = null;
-
-        switch(YYY){
+        let cellId = null;
+        let statType = null;
+    
+        switch(YYY) {
             case "helmet":
-                row = table.rows[0];
-                cell = row.cells[0];
+                cellId = "EHelmet";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
-                this.updateStats("def-stat", item.defense);
                 break;
             case "chestplate":
-                row = table.rows[1];
-                cell = row.cells[0];
+                cellId = "EChestplate";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
-                this.updateStats("def-stat", item.defense);
                 break;
             case "leggings":
-                row = table.rows[2];
-                cell = row.cells[0];
+                cellId = "ELeggings";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
-                this.updateStats("def-stat", item.defense);
                 break;
             case "boots":
-                row = table.rows[3];
-                cell = row.cells[0];
+                cellId = "EBoots";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
-                this.updateStats("def-stat", item.defense);
                 break;
             case "sword":
             case "axe":
             case "bow":
             case "crossbow":
-                row = table.rows[4];
-                cell = row.cells[0];
+                cellId = "EWeapons";
+                statType = "dmg-stat";
                 item = await Provider.getWeapon(id);
-                console.log(item);
-                cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
-                this.updateStats("dmg-stat", item.attack);
-
                 break;
+            default:
+                return;
         }
+    
+        let cell = document.getElementById(cellId);
+        if (!cell) return;
+    
+        // Vérifier si un objet est déjà équipé et le déséquiper en attendant sa fin
+        if (cell.innerHTML !== "None") {
+            const previousItemId = cell.getAttribute("data-item-id");
+            if (previousItemId) {
+                await this.unequipItem(previousItemId);
+            }
+        }
+    
+        // Équiper le nouvel objet après déséquipement
+        console.log("Nouvel équipement :", item);
+        cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
+        cell.setAttribute("data-item-id", item.id);
+        this.updateStats(statType, item.defense || item.attack);
     }
 
-
-    
-    static async unequipItem(id){
+    static async unequipItem(id) {
         const parts = id.split('_');
         if (parts.length === 1) {
             parts.push(parts[0]);
         }
         const [XXX, YYY] = parts;
-        console.log(XXX, YYY);
+        console.log("Déséquipement :", XXX, YYY);
 
         let item = null;
-        let table = document.getElementById("itemTable");
-        let row = null;
-        let cell = null;
+        let cellId = null;
+        let statType = null;
 
-        switch(YYY){
+        switch(YYY) {
             case "helmet":
-                row = table.rows[0];
-                cell = row.cells[0];
+                cellId = "EHelmet";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `None`;
-                this.updateStats("def-stat", -item.defense);
                 break;
             case "chestplate":
-                row = table.rows[1];
-                cell = row.cells[0];
+                cellId = "EChestplate";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `None`;
-                this.updateStats("def-stat", -item.defense);
                 break;
             case "leggings":
-                row = table.rows[2];
-                cell = row.cells[0];
+                cellId = "ELeggings";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `None`;
-                this.updateStats("def-stat", -item.defense);
                 break;
             case "boots":
-                row = table.rows[3];
-                cell = row.cells[0];
+                cellId = "EBoots";
+                statType = "def-stat";
                 item = await Provider.getArmor(id);
-                console.log(item);
-                cell.innerHTML = `None`;
-                this.updateStats("def-stat", -item.defense);                
                 break;
             case "sword":
             case "axe":
             case "bow":
             case "crossbow":
-                row = table.rows[4];
-                cell = row.cells[0];
+                cellId = "EWeapons";
+                statType = "dmg-stat";
                 item = await Provider.getWeapon(id);
-                console.log(item);
-                cell.innerHTML = `None`;
-                this.updateStats("dmg-stat", -item.attack);
                 break;
+            default:
+                return;
         }
+
+        let cell = document.getElementById(cellId);
+        if (!cell) return;
+
+        console.log("Suppression de :", item);
+        cell.innerHTML = `None`;
+        cell.removeAttribute("data-item-id");
+        this.updateStats(statType, -(item.defense || item.attack));
     }
 
     static updateStats(stat, value) {
         const statElement = document.getElementById(stat);
         const currentStat = parseInt(statElement.innerHTML) || 0;
         statElement.innerHTML = currentStat + value;
-    }
-    
-    
-
-    static async getInitValue(cat){
-        switch(cat){
-            case "helmet":
-
-
-        }
     }
 }
