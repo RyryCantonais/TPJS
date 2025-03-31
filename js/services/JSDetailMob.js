@@ -50,7 +50,6 @@ export default class JSDetailMob {
         let cell = document.getElementById(cellId);
         if (!cell) return;
     
-        // Vérifier si un objet est déjà équipé et le déséquiper en attendant sa fin
         if (cell.innerHTML !== "None") {
             const previousItemId = cell.getAttribute("data-item-id");
             if (previousItemId) {
@@ -58,7 +57,6 @@ export default class JSDetailMob {
             }
         }
     
-        // Équiper le nouvel objet après déséquipement
         console.log("Nouvel équipement :", item);
         cell.innerHTML = `<img src="${item.image_url}" onclick="JSDetailMob.unequipItem('${item.id}')" style="width: 50px; height: 50px;">`;
         cell.setAttribute("data-item-id", item.id);
