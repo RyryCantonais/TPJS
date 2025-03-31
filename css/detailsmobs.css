@@ -15,9 +15,10 @@ body {
     background-color: #2c2c2c;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    display: flex; /* Utilisation de flexbox pour aligner les div horizontalement */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Espacement entre les sections */
+    gap: 20px;
 }
 
 /* Section description du mob */
@@ -26,7 +27,7 @@ body {
     text-align: center;
 }
 
-#desc-mob h2 {
+#desc-mob h2, #equipement-mob h2, #stats-mob h2 {
     color: #ffcc00;
     border-bottom: 2px solid #ffcc00;
     padding-bottom: 5px;
@@ -51,20 +52,14 @@ body {
     text-align: center;
 }
 
-#equipement-mob h2 {
-    color: #ffcc00;
-    border-bottom: 2px solid #ffcc00;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+#equipement-mob table, #stats-mob table {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    border-collapse: collapse;
 }
 
-#equipement-mob table {
-    width: 100%;
-    margin-top: 20px;
-}
-
-#equipement-mob td {
-    padding: 10px;
+#equipement-mob td, #stats-mob td {
     background-color: #3a3a3a;
     color: #f0f0f0;
 }
@@ -73,12 +68,6 @@ body {
 #stats-mob {
     flex: 1;
     text-align: center;
-}
-
-#stats-mob table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
 }
 
 #stats-mob th, #stats-mob td {
@@ -91,10 +80,6 @@ body {
     background-color: #ffcc00;
     color: #1e1e1e;
     font-weight: bold;
-}
-
-#stats-mob td {
-    background-color: #3a3a3a;
 }
 
 /* Table d'équipement sélectionné */
@@ -111,16 +96,18 @@ body {
     color: #f0f0f0;
 }
 
-#equipement-list img {
+#equipement-list img, #itemTable img {
     width: 50px;
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     image-rendering: pixelated;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Ajout d'un effet au survol des éléments d'équipement */
-#equipement-list img:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+#equipement-list img:hover, #itemTable img:hover {
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+    transform: scale(1.1);
 }
+
