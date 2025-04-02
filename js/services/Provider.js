@@ -138,4 +138,23 @@ export default class Provider{
             console.error(`Error: ${error}`);
         }
     }
+
+    static searchMobByName = async (name) => {
+        const mobs = await this.getAllMobs();
+        const searchResult = mobs.filter(mob => mob.name.toLowerCase().includes(name.toLowerCase()));
+        return searchResult;
+    }
+
+    static searchArmorByName = async (name) => {
+        const armors = await this.getAllArmors();
+        const searchResult = armors.filter(armor => armor.name.toLowerCase().includes(name.toLowerCase()));
+        return searchResult;
+    }
+
+    static searchWeaponByName = async (name) => {
+        const weapons = await this.getAllWeapons();
+        const searchResult = weapons.filter(weapon => weapon.name.toLowerCase().includes(name.toLowerCase()));
+        return searchResult;
+    }
+
 }
