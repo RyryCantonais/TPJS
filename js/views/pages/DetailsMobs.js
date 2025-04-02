@@ -1,5 +1,6 @@
 import Provider from "../../services/Provider.js";
 import JSDetailMob from "../../services/JSDetailMob.js";
+import Favoris from "../../services/Favoris.js";
 
 export default class DetailsMobs {
     // Render la page contenant les détails d'un mob, y compris son équipement et ses statistiques
@@ -9,6 +10,7 @@ export default class DetailsMobs {
         const weapons = await Provider.getAllWeapons();
         const allEquipments = [...armors, ...weapons]; 
         window.JSDetailMob = JSDetailMob;
+        window.Favoris = Favoris;
 
 
         let tableContent = "<tr>"; 
@@ -34,6 +36,9 @@ export default class DetailsMobs {
                     <h2>${mobs.name}</h2>
                     <p>${mobs.description}</p>
                     <img src="${mobs.image_url}" alt="${mobs.name}" style="max-width: 100%; height: auto;">
+                    <button id="favorites-button" onclick="Favoris.addMob('${mobs.id}')">
+                    ${Favoris.isFavorite(mobs.id) ? 'Retirer des favoris' : 'Ajouter aux favoris'}
+                    </button>
                 </div>
                 <div class="mob" id="equipement-mob">
                     <h2>Equipement</h2>
