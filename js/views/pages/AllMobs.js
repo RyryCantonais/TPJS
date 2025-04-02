@@ -1,6 +1,7 @@
 import Provider from "../../services/Provider.js";
 
 export default class AllMobs{
+    // Render la page contenant la liste de tout les mobs
     static async render(){
         const mobs = await Provider.getAllMobs();
         console.log(mobs);

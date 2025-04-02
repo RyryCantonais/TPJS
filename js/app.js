@@ -6,6 +6,7 @@ import DetailWeapon from "./views/pages/DetailWeapon.js";
 
 import Utils from "./services/Utils.js";
 
+//Toute les routes menant vers une page
 const routes = {
     "/": AllMobs,
     "/mobs": AllMobs,

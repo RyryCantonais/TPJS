@@ -1,6 +1,7 @@
 import Provider from "../../services/Provider.js";
 
 export default class DetailsArmor{
+    // Render la page contenant les détails d'une armure 
     static async render(id){
         const armors = await Provider.getArmor(id);
         console.log(armors);

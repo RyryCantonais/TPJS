@@ -2,6 +2,7 @@ import Provider from "../../services/Provider.js";
 import JSDetailMob from "../../services/JSDetailMob.js";
 
 export default class DetailsMobs {
+    // Render la page contenant les détails d'un mob, y compris son équipement et ses statistiques
     static async render(id) {
         const mobs = await Provider.getMob(id);
         const armors = await Provider.getAllArmors();

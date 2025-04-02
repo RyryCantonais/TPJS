@@ -1,6 +1,7 @@
 import Provider from "../../services/Provider.js";
 
 export default class AllItems{
+    // Render la page contenant la liste de tout les items équipables
     static async render(){
         const armors = await Provider.getAllArmors();
         const weapons = await Provider.getAllWeapons();

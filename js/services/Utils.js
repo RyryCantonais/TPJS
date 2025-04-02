@@ -1,4 +1,6 @@
 const Utils = {
+
+    //Parse l'URL de la requête
     parseRequestURL: () => {
         let url = location.hash.slice(1).toLowerCase() || '/';
         let r = url.split("/");

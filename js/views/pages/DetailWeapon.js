@@ -1,6 +1,7 @@
 import Provider from "../../services/Provider.js";
 
 export default class DetailWeapon{
+    // Render la page contenant les détails d'une arme
     static async render(id){
         const weapons = await Provider.getWeapon(id);
         console.log(weapons);

@@ -2,6 +2,7 @@ import { ENDPOINT } from "../config.js";
 
 export default class Provider{
 
+    // Récupérer les items (ceux servant à la construction des objets)
     static getItem = async (id) => {
         const options = {
             method: 'GET',
@@ -18,6 +19,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer tout les mobs contenus dans le fichier JSON
     static getAllMobs = async () => {
         const options = {
             method: 'GET',
@@ -34,6 +36,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer un mob selon son ID
     static getMob = async (id) => {
         const options = {
             method: 'GET',
@@ -50,6 +53,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer tout les items d'armures contenus dans le fichier JSON
     static getAllArmors = async () => {
         const options = {
             method: 'GET',
@@ -66,6 +70,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer un item d'armure selon son ID
     static getArmor = async (id) => {
         const options = {
             method: 'GET',
@@ -82,6 +87,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer tout les items d'armes contenus dans le fichier JSON
     static getAllWeapons = async () => {
         const options = {
             method: 'GET',
@@ -98,6 +104,7 @@ export default class Provider{
         }
     }
 
+    // Récupérer un item d'arme selon son ID
     static getWeapon = async (id) => {
         const options = {
             method: 'GET',
@@ -114,6 +121,7 @@ export default class Provider{
         }
     }
 
+    //Récupérer tout les items possédés par le joueur
     static getInventory = async () => {
         const options = {
             method: "GET",
